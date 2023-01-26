@@ -30,14 +30,17 @@ factors = []
 for i in range(len(allF)):
     l=allF[i]
     for j in range(len(l)):
+        # adds unique factors to the empty list 
         if l[j] not in factors:
             factors.append(l[j])
         else:
+            # if the unique factor is already in the list - add it ad many times as needed (eg - 8 >> 2,2,2)
             count=(l.count(l[j])-factors.count(l[j]))
             factors.extend([l[j]]*count)
 
 commonINT=1
 
+# this can be accomplished with import math, compound (i think) - i arbitrarily chose to make my own
 for i in range(len(factors)):
     commonINT*=factors[i]
     print(commonINT)
