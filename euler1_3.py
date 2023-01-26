@@ -23,4 +23,3 @@ for i in range(upper):
             numbers.append(i)
 
 print (f"the sum of all the multiples of {multipliers} below {upper} is", sum(numbers))
-
