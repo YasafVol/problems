@@ -40,7 +40,7 @@ for i in range(len(allF)):
 
 commonINT=1
 
-# this can be accomplished with import math, compound (i think) - i arbitrarily chose to make my own
+# this can be accomplished with import math, math.prod - i arbitrarily chose to make my own
 for i in range(len(factors)):
     commonINT*=factors[i]
     print(commonINT)
