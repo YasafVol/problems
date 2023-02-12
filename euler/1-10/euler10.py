@@ -4,7 +4,7 @@
 
 # >> this code is very slow O(n^2) - runtime =  2684.8913905620575 (~45 min)
 import time
-tst = 2000000
+tst = 200
 
 def primes_in_range(n):
     lst = [x for x in range(2,n+1)] # make a list of all numbers up to n
