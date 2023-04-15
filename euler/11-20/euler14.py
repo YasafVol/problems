@@ -27,17 +27,13 @@ def collatz(n):
             memo_object[n] =1
         elif n%2==0:
             memo_object[n] = collatz(n/2)[0] +1
-            print (collatz(n/2)[0])
         else:
             memo_object[n] = collatz(n*3+1)[0] +1
     return memo_object[n], n
 
 t0= time.time()
-
 for i in range(3,limit,2):
     collatz(i)
-    
-
 
 max_value = max(memo_object, key=memo_object.get)    
 print("\n", "Number=> " ,max_value)
