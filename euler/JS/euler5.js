@@ -1,5 +1,6 @@
 let range = [];
-for (let i = 1; i<= 20; i++) {range.push(i);}
+const targetNum = 20;
+for (let i = 1; i<= targetNum; i++) {range.push(i);}
 let smallEvenDivisable = 0;
 smallEvenDivisable = Math.max(...range);
 
